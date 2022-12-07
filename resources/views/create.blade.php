@@ -17,7 +17,6 @@
     <label for="exampleFormControlInput1" class="form-label">Director</label>
     <input type="text" name="director" class="form-control" id="exampleFormControlInput1" placeholder="Nikola Kojo">
 </div>
-
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Year</label>
     <input type="int" name="year" class="form-control" id="exampleFormControlInput1" placeholder="2012">
