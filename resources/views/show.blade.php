@@ -25,4 +25,15 @@
               </li>
             @endforeach
           </ul>
-      @endif
+    @endif
+    <form method="POST" action="{{ url('/comments/add/' . $movie->id) }}">
+        {{ csrf_field() }}
+            <label for="content">Comment</label>
+            <br>
+            <br>
+            <input type="text" class="form-control" id="content" name="content"/>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-success">add comment</button>
+    </form>
+

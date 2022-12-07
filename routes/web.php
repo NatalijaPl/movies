@@ -25,3 +25,5 @@ Route::get('/movies/{id}', [MoviesController::class, 'show'])->name('single-post
 Route::get('/create', [MoviesController::class, 'create']);
 
 Route::post('/movies', [MoviesController::class, 'store']);
+
+Route::post('/comments/add/{id}', [CommentsController::class, 'store']);
