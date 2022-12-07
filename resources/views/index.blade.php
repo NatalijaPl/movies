@@ -1,4 +1,4 @@
-
+@extends('layouts.master')
 <h1>All movies</h1>
 <ul>
 @foreach ($movies as $movie)
