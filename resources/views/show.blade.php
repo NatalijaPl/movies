@@ -15,3 +15,14 @@
         Storyline: {{ $movie->storyline }}
     </p>
     </p>
+    @if(count($movie->comments))
+          <p><br><strong>Comments:</strong><br></p>
+          <ul>
+            @foreach($movie->comments as $comment)
+              <li>
+                <p>{{ $comment->content }}</p>
+                <p>{{ $comment->created_at }}</p>
+              </li>
+            @endforeach
+          </ul>
+      @endif
